@@ -1,40 +1,35 @@
 //
-//  ViewController.m
+//  HWSingleSectionViewController.m
 //  IGListLearning
 //
 //  Created by Heath on 2018/4/28.
 //  Copyright © 2018 Heath. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "HWDemoItem.h"
-#import "HWPullLoadingViewController.h"
-#import "HWDemoSectionController.h"
 #import "HWSingleSectionViewController.h"
+#import "HWListIntoSingleSectionController.h"
+#import "NSArray+HW_IGListDiffable.h"
 
-@interface ViewController () <IGListAdapterDataSource>
+@interface HWSingleSectionViewController () <IGListAdapterDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) NSArray *items;
 @property (nonatomic, strong) IGListAdapter *adapter;
+@property (nonatomic, strong) NSArray *dataList;
 
 @end
 
-@implementation ViewController
+@implementation HWSingleSectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.title = @"Demo";
+    // Do any additional setup after loading the view.
     [self.view addSubview:self.collectionView];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
 
-}
-
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    self.collectionView.frame = self.view.bounds;
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+       make.edges.mas_equalTo(UIEdgeInsetsZero);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,11 +40,11 @@
 #pragma mark - IGListAdapterDataSource
 
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    return self.items;
+    return @[self.dataList];
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    return [HWDemoSectionController new];
+    return [HWListIntoSingleSectionController new];
 }
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
@@ -67,19 +62,24 @@
     return _collectionView;
 }
 
-- (NSArray *)items {
-    if (!_items) {
-        _items = @[[[HWDemoItem alloc] initWithDemoName:@"Pull Loading" controllerClass:NSStringFromClass(HWPullLoadingViewController.class)],
-                  [[HWDemoItem alloc] initWithDemoName:@"Merge Data to Single Section" controllerClass:NSStringFromClass(HWSingleSectionViewController.class)]];
-    }
-    return _items;
-}
+
 
 - (IGListAdapter *)adapter {
     if (!_adapter) {
         _adapter = [[IGListAdapter alloc] initWithUpdater:[IGListAdapterUpdater new] viewController:self];
     }
     return _adapter;
+}
+
+- (NSArray *)dataList {
+    if (!_dataList) {
+        NSMutableArray *list = [NSMutableArray arrayWithCapacity:20];
+        for (int i = 0; i < 20; ++i) {
+            [list addObject:@(i)];
+        }
+        _dataList = [list copy];
+    }
+    return _dataList;
 }
 
 
