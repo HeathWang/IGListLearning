@@ -37,6 +37,7 @@
     Class clazz = NSClassFromString(self.demoItem.controllerClass);
 
     HWPullLoadingViewController *pullLoadingController = (HWPullLoadingViewController *) [[clazz alloc] init];
+    pullLoadingController.title = self.demoItem.demoName;
     [self.viewController.navigationController pushViewController:pullLoadingController animated:YES];
 }
 
