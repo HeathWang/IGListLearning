@@ -1,0 +1,19 @@
+PODS:
+  - IGListKit (3.3.0):
+    - IGListKit/Default (= 3.3.0)
+  - IGListKit/Default (3.3.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.3.0)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - IGListKit (~> 3.0)
+  - Masonry (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  IGListKit: 71455d8fa95ff3d8594db667edd41c37db715c01
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: fe9e15f45a2a3f8b9a1cd71d5d498d8edfc00608
+
+COCOAPODS: 1.4.0
