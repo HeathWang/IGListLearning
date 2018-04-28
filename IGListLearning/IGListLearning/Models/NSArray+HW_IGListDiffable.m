@@ -15,12 +15,7 @@
 }
 
 - (BOOL)isEqualToDiffableObject:(id<IGListDiffable>)object {
-    if ([object isKindOfClass:NSArray.class]) {
-        NSArray *arrObj = object;
-        return [self isEqualToArray:arrObj];
-    } else {
-        return NO;
-    }
+    return [self isEqual:object];
 }
 
 @end

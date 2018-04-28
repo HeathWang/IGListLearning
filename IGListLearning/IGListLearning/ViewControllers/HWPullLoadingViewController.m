@@ -74,6 +74,7 @@ static NSString *const kSpinnerToken = @"com.heathwang.spinner.token";
     CGFloat distance = scrollView.contentSize.height - (targetContentOffset->y + scrollView.bounds.size.height);
     if (distance < 200 && !self.isLoading) {
         self.isLoading = YES;
+        // every time user performUpdatesAnimated method, it will call objectsForListAdapter -> sectionControllerForObject
         [self.adapter performUpdatesAnimated:YES completion:NULL];
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
             sleep(3);

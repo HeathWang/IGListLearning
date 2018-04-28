@@ -11,6 +11,7 @@
 #import "HWPullLoadingViewController.h"
 #import "HWDemoSectionController.h"
 #import "HWSingleSectionViewController.h"
+#import "HWSearchViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -70,7 +71,8 @@
 - (NSArray *)items {
     if (!_items) {
         _items = @[[[HWDemoItem alloc] initWithDemoName:@"Pull Loading" controllerClass:NSStringFromClass(HWPullLoadingViewController.class)],
-                  [[HWDemoItem alloc] initWithDemoName:@"Merge Data to Single Section" controllerClass:NSStringFromClass(HWSingleSectionViewController.class)]];
+                  [[HWDemoItem alloc] initWithDemoName:@"Merge Data to Single Section" controllerClass:NSStringFromClass(HWSingleSectionViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Search Auto Complete" controllerClass:NSStringFromClass(HWSearchViewController.class)]];
     }
     return _items;
 }
