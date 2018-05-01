@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"Normal TableView";
     [self.view addSubview:self.collectionView];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
@@ -40,7 +41,7 @@
 #pragma mark - IGListAdapterDataSource
 
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    return @[self.dataList];
+    return self.dataList;
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
@@ -56,13 +57,21 @@
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[UICollectionViewFlowLayout new]];
+        if (_shouldStickHeader) {
+            // This is ONLY used above iOS9.
+            // set the UICollectionViewFlowLayout "sectionHeadersPinToVisibleBounds" make collectionView like the TableView style: Plain or Group.
+//        layout.sectionHeadersPinToVisibleBounds = YES;
+            IGListCollectionViewLayout *layout = [[IGListCollectionViewLayout alloc] initWithStickyHeaders:YES scrollDirection:UICollectionViewScrollDirectionVertical topContentInset:0 stretchToEdge:YES];
+            _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        } else {
+            UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+            _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        }
+
         _collectionView.backgroundColor = [UIColor whiteColor];
     }
     return _collectionView;
 }
-
-
 
 - (IGListAdapter *)adapter {
     if (!_adapter) {
@@ -73,11 +82,23 @@
 
 - (NSArray *)dataList {
     if (!_dataList) {
+        NSMutableArray *dataSource = [NSMutableArray arrayWithCapacity:2];
         NSMutableArray *list = [NSMutableArray arrayWithCapacity:20];
         for (int i = 0; i < 20; ++i) {
-            [list addObject:@(i)];
+            [list addObject:@(i + 1)];
         }
-        _dataList = [list copy];
+        
+        [dataSource addObject:[list copy]];
+        
+        [list removeAllObjects];
+        
+        for (int i = 20; i < 40; ++i) {
+            [list addObject:@(i + 1)];
+        }
+        
+        [dataSource addObject:[list copy]];
+        
+        _dataList = [dataSource copy];
     }
     return _dataList;
 }

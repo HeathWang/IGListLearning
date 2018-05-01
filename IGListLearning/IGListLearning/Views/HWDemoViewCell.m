@@ -43,6 +43,7 @@
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@14);
         make.centerY.equalTo(@0);
+        make.right.equalTo(@-14);
     }];
     [self.contentView.layer addSublayer:self.separatorLayer];
 }

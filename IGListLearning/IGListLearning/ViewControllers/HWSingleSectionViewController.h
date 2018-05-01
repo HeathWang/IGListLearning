@@ -12,4 +12,6 @@
  */
 @interface HWSingleSectionViewController : HWBaseViewController
 
+@property (nonatomic, assign) BOOL shouldStickHeader;
+
 @end

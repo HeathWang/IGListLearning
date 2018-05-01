@@ -31,4 +31,12 @@
     self.number = object;
 }
 
+//- (CGFloat)minimumLineSpacing {
+//    return 20;
+//}
+//
+//- (CGFloat)minimumInteritemSpacing {
+//    return 20;
+//}
+
 @end

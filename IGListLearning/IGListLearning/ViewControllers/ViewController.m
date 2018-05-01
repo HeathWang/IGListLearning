@@ -70,8 +70,8 @@
 
 - (NSArray *)items {
     if (!_items) {
-        _items = @[[[HWDemoItem alloc] initWithDemoName:@"Pull Loading" controllerClass:NSStringFromClass(HWPullLoadingViewController.class)],
-                  [[HWDemoItem alloc] initWithDemoName:@"Merge Data to Single Section" controllerClass:NSStringFromClass(HWSingleSectionViewController.class)],
+        _items = @[[[HWDemoItem alloc] initWithDemoName:@"Pull Loading More Data." controllerClass:NSStringFromClass(HWPullLoadingViewController.class)],
+                  [[HWDemoItem alloc] initWithDemoName:@"Merge Data to Single Section, use Collection Like a Plain or a Group TableView.Include Header and Footer." controllerClass:NSStringFromClass(HWSingleSectionViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Search Auto Complete" controllerClass:NSStringFromClass(HWSearchViewController.class)]];
     }
     return _items;

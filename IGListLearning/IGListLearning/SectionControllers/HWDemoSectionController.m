@@ -20,7 +20,7 @@
 @implementation HWDemoSectionController
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {
-    return CGSizeMake(self.collectionContext.containerSize.width, 60);
+    return CGSizeMake(self.collectionContext.containerSize.width, 64);
 }
 
 - (__kindof UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
