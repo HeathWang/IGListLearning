@@ -10,6 +10,7 @@
 #import "HWLabelSectionController.h"
 #import "NSString+HWAdd.h"
 #import "HWSearchSectionController.h"
+#import "HWEmptyResultView.h"
 
 @interface HWSearchViewController () <IGListAdapterDataSource, HWSearchSectionControllerDelegate>
 
