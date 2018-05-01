@@ -10,4 +10,6 @@
 
 @interface UIButton (HWAdd)
 
+
++ (instancetype)navigationButtonWithTitle:(NSString *)title;
 @end
