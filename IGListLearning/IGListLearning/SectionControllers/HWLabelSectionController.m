@@ -11,7 +11,7 @@
 
 @interface HWLabelSectionController ()
 
-@property (nonatomic, strong) NSNumber *number;
+@property (nonatomic, strong) NSString *contentText;
 
 @end
 
@@ -23,20 +23,13 @@
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
     HWDemoViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:HWDemoViewCell.class forSectionController:self atIndex:index];
-    cell.nameText = [NSString stringWithFormat:@"%ld", self.number.integerValue];
+    cell.nameText = self.contentText;
     return cell;
 }
 
 - (void)didUpdateToObject:(id)object {
-    self.number = object;
+    self.contentText = object;
 }
 
-//- (CGFloat)minimumLineSpacing {
-//    return 20;
-//}
-//
-//- (CGFloat)minimumInteritemSpacing {
-//    return 20;
-//}
 
 @end

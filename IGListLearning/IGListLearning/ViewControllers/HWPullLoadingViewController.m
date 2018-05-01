@@ -83,7 +83,7 @@ static NSString *const kSpinnerToken = @"com.heathwang.spinner.token";
                 self.isLoading = NO;
                 NSInteger count = self.list.count;
                 for (int i = count; i < count + 20; ++i) {
-                    [self.list addObject:@(i + 1)];
+                    [self.list addObject:[NSString stringWithFormat:@"%ld", (long) (i + 1)]];
                 }
 
                 [self.adapter performUpdatesAnimated:YES completion:^(BOOL finished) {
@@ -117,7 +117,7 @@ static NSString *const kSpinnerToken = @"com.heathwang.spinner.token";
     if (!_list) {
         _list = [NSMutableArray arrayWithCapacity:10];
         for (int i = 0; i < 20; ++i) {
-            [_list addObject:@(i + 1)];
+            [_list addObject:[NSString stringWithFormat:@"%ld", (long) (i + 1)]];
         }
     }
     return _list;
