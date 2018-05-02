@@ -10,4 +10,9 @@
 
 @interface HWLabelCell : UICollectionViewCell
 
+@property (nonatomic, copy) NSString *content;
+
++ (CGFloat)singleCellHeight;
+
++ (CGFloat)cellHeightWithText:(NSString *)text width:(CGFloat)width;
 @end

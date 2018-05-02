@@ -25,5 +25,15 @@
     return [[self alloc] initWithUid:uid username:username handle:handle];
 }
 
+#pragma mark - IGListDiffable
+
+- (nonnull id <NSObject>)diffIdentifier {
+    return self.uid;
+}
+
+- (BOOL)isEqualToDiffableObject:(nullable id <IGListDiffable>)other {
+    return [self isEqual:other];
+}
+
 
 @end

@@ -12,6 +12,7 @@
 #import "HWDemoSectionController.h"
 #import "HWSingleSectionViewController.h"
 #import "HWSearchViewController.h"
+#import "HWMixDataTypeViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -72,7 +73,8 @@
     if (!_items) {
         _items = @[[[HWDemoItem alloc] initWithDemoName:@"Pull Loading More Data." controllerClass:NSStringFromClass(HWPullLoadingViewController.class)],
                   [[HWDemoItem alloc] initWithDemoName:@"Merge Data to Single Section, use Collection Like a Plain or a Group TableView.Include Header and Footer." controllerClass:NSStringFromClass(HWSingleSectionViewController.class)],
-                   [[HWDemoItem alloc] initWithDemoName:@"Search Auto Complete" controllerClass:NSStringFromClass(HWSearchViewController.class)]];
+                   [[HWDemoItem alloc] initWithDemoName:@"Search Auto Complete" controllerClass:NSStringFromClass(HWSearchViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Mix Data, include multiple data type in list." controllerClass:NSStringFromClass(HWMixDataTypeViewController.class)]];
     }
     return _items;
 }

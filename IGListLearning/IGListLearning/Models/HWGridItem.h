@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HWGridItem : NSObject
+@interface HWGridItem : NSObject <IGListDiffable>
 
 @property (nonatomic, strong, readonly) UIColor *color;
 @property (nonatomic, assign, readonly) NSInteger count;
+@property (nonatomic, strong, readonly) NSArray *items;
 
 - (instancetype)initWithColor:(UIColor *)color count:(NSInteger)count NS_DESIGNATED_INITIALIZER;
 

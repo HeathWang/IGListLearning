@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HWUserModel : NSObject
+@interface HWUserModel : NSObject <IGListDiffable>
 
 @property (nonatomic, copy, readonly) NSString *uid;
 @property (nonatomic, copy, readonly) NSString *username;

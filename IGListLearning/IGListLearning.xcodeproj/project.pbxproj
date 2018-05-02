@@ -34,6 +34,12 @@
 		7EE050432099621E000D9127 /* HWMixDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050422099621E000D9127 /* HWMixDataType.m */; };
 		7EE0504620996300000D9127 /* HWUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE05045209962FF000D9127 /* HWUserModel.m */; };
 		7EE050492099630D000D9127 /* HWGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050482099630D000D9127 /* HWGridItem.m */; };
+		7EE0504C209965C2000D9127 /* HWMixDataTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0504B209965C2000D9127 /* HWMixDataTypeViewController.m */; };
+		7EE0504F2099848A000D9127 /* HWUserSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0504E2099848A000D9127 /* HWUserSectionController.m */; };
+		7EE050522099849F000D9127 /* HWGrimSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050512099849F000D9127 /* HWGrimSectionController.m */; };
+		7EE05055209984CD000D9127 /* HWExpandableSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE05054209984CD000D9127 /* HWExpandableSectionController.m */; };
+		7EE05058209992C5000D9127 /* HWUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE05057209992C5000D9127 /* HWUserCell.m */; };
+		7EE0505B209998E7000D9127 /* HWGrimCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0505A209998E7000D9127 /* HWGrimCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +98,18 @@
 		7EE05045209962FF000D9127 /* HWUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWUserModel.m; sourceTree = "<group>"; };
 		7EE050472099630D000D9127 /* HWGridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWGridItem.h; sourceTree = "<group>"; };
 		7EE050482099630D000D9127 /* HWGridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWGridItem.m; sourceTree = "<group>"; };
+		7EE0504A209965C2000D9127 /* HWMixDataTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWMixDataTypeViewController.h; sourceTree = "<group>"; };
+		7EE0504B209965C2000D9127 /* HWMixDataTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWMixDataTypeViewController.m; sourceTree = "<group>"; };
+		7EE0504D2099848A000D9127 /* HWUserSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWUserSectionController.h; sourceTree = "<group>"; };
+		7EE0504E2099848A000D9127 /* HWUserSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWUserSectionController.m; sourceTree = "<group>"; };
+		7EE050502099849F000D9127 /* HWGrimSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWGrimSectionController.h; sourceTree = "<group>"; };
+		7EE050512099849F000D9127 /* HWGrimSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWGrimSectionController.m; sourceTree = "<group>"; };
+		7EE05053209984CD000D9127 /* HWExpandableSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWExpandableSectionController.h; sourceTree = "<group>"; };
+		7EE05054209984CD000D9127 /* HWExpandableSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWExpandableSectionController.m; sourceTree = "<group>"; };
+		7EE05056209992C5000D9127 /* HWUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWUserCell.h; sourceTree = "<group>"; };
+		7EE05057209992C5000D9127 /* HWUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWUserCell.m; sourceTree = "<group>"; };
+		7EE05059209998E7000D9127 /* HWGrimCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWGrimCell.h; sourceTree = "<group>"; };
+		7EE0505A209998E7000D9127 /* HWGrimCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWGrimCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +189,12 @@
 				7EE0503920946CFA000D9127 /* HWListIntoSingleSectionController.m */,
 				7E45C7A1209867A700608398 /* HWSearchSectionController.h */,
 				7E45C7A2209867A700608398 /* HWSearchSectionController.m */,
+				7EE0504D2099848A000D9127 /* HWUserSectionController.h */,
+				7EE0504E2099848A000D9127 /* HWUserSectionController.m */,
+				7EE050502099849F000D9127 /* HWGrimSectionController.h */,
+				7EE050512099849F000D9127 /* HWGrimSectionController.m */,
+				7EE05053209984CD000D9127 /* HWExpandableSectionController.h */,
+				7EE05054209984CD000D9127 /* HWExpandableSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -188,6 +212,8 @@
 				7EE0503620946ADA000D9127 /* HWSingleSectionViewController.m */,
 				7EE0503E2094766D000D9127 /* HWSearchViewController.h */,
 				7EE0503F2094766D000D9127 /* HWSearchViewController.m */,
+				7EE0504A209965C2000D9127 /* HWMixDataTypeViewController.h */,
+				7EE0504B209965C2000D9127 /* HWMixDataTypeViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +244,10 @@
 				7E45C7A5209867E200608398 /* HWSearchCell.m */,
 				7E6064DE2098A35400888CE8 /* HWEmptyResultView.h */,
 				7E6064DF2098A35400888CE8 /* HWEmptyResultView.m */,
+				7EE05056209992C5000D9127 /* HWUserCell.h */,
+				7EE05057209992C5000D9127 /* HWUserCell.m */,
+				7EE05059209998E7000D9127 /* HWGrimCell.h */,
+				7EE0505A209998E7000D9127 /* HWGrimCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,7 +404,10 @@
 				7E22D892209415E200AE38F0 /* main.m in Sources */,
 				7EE0502D20945350000D9127 /* HWLabelSectionController.m in Sources */,
 				7EE0503A20946CFA000D9127 /* HWListIntoSingleSectionController.m in Sources */,
+				7EE0504F2099848A000D9127 /* HWUserSectionController.m in Sources */,
 				7EE050492099630D000D9127 /* HWGridItem.m in Sources */,
+				7EE0505B209998E7000D9127 /* HWGrimCell.m in Sources */,
+				7EE0504C209965C2000D9127 /* HWMixDataTypeViewController.m in Sources */,
 				7EE050432099621E000D9127 /* HWMixDataType.m in Sources */,
 				7EE0502720944055000D9127 /* HWDemoSectionController.m in Sources */,
 				7EE0504620996300000D9127 /* HWUserModel.m in Sources */,
@@ -382,8 +415,11 @@
 				7EE0503720946ADA000D9127 /* HWSingleSectionViewController.m in Sources */,
 				7E45C7A3209867A700608398 /* HWSearchSectionController.m in Sources */,
 				7E45C7A920986CA900608398 /* NSString+HWAdd.m in Sources */,
+				7EE050522099849F000D9127 /* HWGrimSectionController.m in Sources */,
+				7EE05055209984CD000D9127 /* HWExpandableSectionController.m in Sources */,
 				7EE050402094766D000D9127 /* HWSearchViewController.m in Sources */,
 				7EE0502120942053000D9127 /* HWDemoItem.m in Sources */,
+				7EE05058209992C5000D9127 /* HWUserCell.m in Sources */,
 				7EE0503320945D40000D9127 /* HWSpinnerCell.m in Sources */,
 				7EE0501E20941D99000D9127 /* HWBaseViewController.m in Sources */,
 				7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */,
