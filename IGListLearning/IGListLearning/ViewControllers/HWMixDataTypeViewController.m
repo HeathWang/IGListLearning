@@ -76,7 +76,9 @@
 #pragma mark - segmentControl event
 
 - (void)segmentControlChanged:(UISegmentedControl *)sender {
-
+    HWMixDataType *dataType = self.typeItems[sender.selectedSegmentIndex];
+    self.selectedClass = dataType.referClazz;
+    [self.adapter performUpdatesAnimated:YES completion:NULL];
 }
 
 - (NSArray *)filterDataWithType:(Class)clazz {
