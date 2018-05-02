@@ -36,5 +36,15 @@
     self.contentText = object;
 }
 
+- (void)didSelectItemAtIndex:(NSInteger)index {
+    self.isExpanding = !self.isExpanding;
+    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [self.collectionContext invalidateLayoutForSectionController:self completion:NULL];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
+
 
 @end

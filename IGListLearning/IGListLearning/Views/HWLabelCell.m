@@ -41,6 +41,7 @@
 }
 
 - (void)loadViews {
+    self.label.numberOfLines = 0;
     [self.contentView addSubview:self.label];
     [self.contentView.layer addSublayer:self.seperatorLayer];
 }
