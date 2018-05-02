@@ -18,6 +18,24 @@
 
 @implementation HWUserSectionController
 
+#pragma mark - init
+
+- (instancetype)initWithCanMove:(BOOL)canMove {
+    self = [super init];
+    if (self) {
+        _canMove = canMove;
+
+        self.minimumInteritemSpacing = 1;
+        self.minimumLineSpacing = 1;
+    }
+
+    return self;
+}
+
++ (instancetype)controllerWithCanMove:(BOOL)canMove {
+    return [[self alloc] initWithCanMove:canMove];
+}
+
 - (NSInteger)numberOfItems {
     return 1;
 }

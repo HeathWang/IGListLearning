@@ -14,7 +14,7 @@
 #import "HWGrimSectionController.h"
 #import "HWUserSectionController.h"
 
-@interface HWMixDataTypeViewController () <IGListAdapterDataSource>
+@interface HWMixDataTypeViewController () <IGListAdapterDataSource, IGListAdapterMoveDelegate>
 
 @property (nonatomic, strong) NSArray<HWMixDataType *> *typeItems;
 @property (nonatomic, assign) Class selectedClass;
@@ -35,8 +35,12 @@
     [self.view addSubview:self.collectionView];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
+    self.adapter.moveDelegate = self;
 
     self.navigationItem.titleView = self.segmentedControl;
+
+    UILongPressGestureRecognizer *longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressAction:)];
+    [self.collectionView addGestureRecognizer:longPressGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,13 +68,19 @@
     if ([object isKindOfClass:NSString.class]) {
         return [HWExpandableSectionController new];
     } else if ([object isKindOfClass:HWGridItem.class]) {
-        return [HWGrimSectionController new];
+        return [[HWGrimSectionController alloc] initWithCanMove:YES];
     }
-    return [HWUserSectionController new];
+    return [[HWUserSectionController alloc] initWithCanMove:YES];
 }
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return nil;
+}
+
+#pragma mark - IGListAdapterMoveDelegate
+
+- (void)listAdapter:(IGListAdapter *)listAdapter moveObject:(id)object from:(NSArray *)previousObjects to:(NSArray *)objects {
+    self.mixedData = object;
 }
 
 #pragma mark - segmentControl event
@@ -90,6 +100,39 @@
     }];
 
     return [items copy];
+}
+
+#pragma mark - long press action
+
+- (void)longPressAction:(UILongPressGestureRecognizer *)longGesture {
+    switch (longGesture.state) {
+        case UIGestureRecognizerStateBegan:
+        {
+            CGPoint point = [longGesture locationInView:self.collectionView];
+            NSIndexPath *selectedIndexPath = [self.collectionView indexPathForItemAtPoint:point];
+            if (selectedIndexPath) {
+                [self.collectionView beginInteractiveMovementForItemAtIndexPath:selectedIndexPath];
+            }
+        }
+            break;
+        case UIGestureRecognizerStateChanged:
+        {
+            UIView *gesView = longGesture.view;
+            if (gesView) {
+                CGPoint point = [longGesture locationInView:gesView];
+                [self.collectionView updateInteractiveMovementTargetPosition:point];
+            }
+        }
+            break;
+        case UIGestureRecognizerStateEnded:
+            [self.collectionView endInteractiveMovement];
+            break;
+        default:
+            [self.collectionView endInteractiveMovement];
+            break;
+
+
+    }
 }
 
 #pragma mark - Getter

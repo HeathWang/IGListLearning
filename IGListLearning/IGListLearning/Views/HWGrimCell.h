@@ -10,4 +10,6 @@
 
 @interface HWGrimCell : UICollectionViewCell
 
+@property (nonatomic, strong) UILabel *indexLabel;
+
 @end

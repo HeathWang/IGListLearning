@@ -18,6 +18,7 @@
 
 @implementation HWExpandableSectionController
 
+
 - (NSInteger)numberOfItems {
     return 1;
 }
@@ -39,6 +40,7 @@
 - (void)didSelectItemAtIndex:(NSInteger)index {
     self.isExpanding = !self.isExpanding;
     [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        // key point
         [self.collectionContext invalidateLayoutForSectionController:self completion:NULL];
     } completion:^(BOOL finished) {
         

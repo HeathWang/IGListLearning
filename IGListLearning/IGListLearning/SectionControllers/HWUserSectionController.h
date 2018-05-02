@@ -10,4 +10,13 @@
 
 @interface HWUserSectionController : IGListSectionController
 
+@property (nonatomic, assign, readonly) BOOL canMove;
+
+- (instancetype)initWithCanMove:(BOOL)canMove NS_DESIGNATED_INITIALIZER;
+
++ (instancetype)controllerWithCanMove:(BOOL)canMove;
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)new NS_UNAVAILABLE;
+
 @end
