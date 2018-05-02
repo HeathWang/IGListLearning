@@ -14,6 +14,7 @@
 #import "HWSearchViewController.h"
 #import "HWMixDataTypeViewController.h"
 #import "HWNestedViewController.h"
+#import "HWEmptyDataViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -76,7 +77,8 @@
                   [[HWDemoItem alloc] initWithDemoName:@"Merge Data to Single Section, use Collection Like a Plain or a Group TableView.Include Header and Footer." controllerClass:NSStringFromClass(HWSingleSectionViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Search Auto Complete" controllerClass:NSStringFromClass(HWSearchViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Mix Data, include multiple data type in list." controllerClass:NSStringFromClass(HWMixDataTypeViewController.class)],
-                   [[HWDemoItem alloc] initWithDemoName:@"Nested Adapter, a controller cell include another UICollectionView" controllerClass:NSStringFromClass(HWNestedViewController.class)]];
+                   [[HWDemoItem alloc] initWithDemoName:@"Nested Adapter, a controller cell include another UICollectionView" controllerClass:NSStringFromClass(HWNestedViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Empty DataView" controllerClass:NSStringFromClass(HWEmptyDataViewController.class)]];
     }
     return _items;
 }
