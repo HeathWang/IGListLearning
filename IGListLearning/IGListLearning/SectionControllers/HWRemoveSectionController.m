@@ -46,4 +46,10 @@
     self.index = object;
 }
 
+- (void)didSelectItemAtIndex:(NSInteger)index {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(sectionControllerWantsRemoved:)]) {
+        [self.delegate sectionControllerWantsRemoved:self];
+    }
+}
+
 @end

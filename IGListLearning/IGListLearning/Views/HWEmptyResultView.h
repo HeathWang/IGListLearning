@@ -10,4 +10,6 @@
 
 @interface HWEmptyResultView : UIView
 
+
+
 @end

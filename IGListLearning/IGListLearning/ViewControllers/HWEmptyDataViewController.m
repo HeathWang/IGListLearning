@@ -10,7 +10,7 @@
 #import "HWEmptyResultView.h"
 #import "HWRemoveSectionController.h"
 
-@interface HWEmptyDataViewController () <IGListAdapterDataSource>
+@interface HWEmptyDataViewController () <IGListAdapterDataSource, HWRemoveSectionControllerDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IGListAdapter *adapter;
@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.startIndex = 1;
+    self.startIndex = 0;
     self.dataList = [NSMutableArray array];
     
     for (int i = 1; i < 8; ++i) {
@@ -38,6 +38,9 @@
 
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
+
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addDataAction)];
+    self.navigationItem.rightBarButtonItem = barButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,6 +53,14 @@
     self.collectionView.frame = self.view.bounds;
 }
 
+#pragma mark - add data action
+
+- (void)addDataAction {
+    self.startIndex ++;
+    [self.dataList addObject:@(self.startIndex)];
+    [self.adapter performUpdatesAnimated:YES completion:NULL];
+}
+
 #pragma mark - IGListAdapterDataSource
 
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
@@ -57,11 +68,21 @@
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    return [HWRemoveSectionController new];
+    HWRemoveSectionController *sectionController = [HWRemoveSectionController new];
+    sectionController.delegate = self;
+    return sectionController;
 }
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return [HWEmptyResultView new];
+}
+
+#pragma mark - HWRemoveSectionControllerDelegate
+
+- (void)sectionControllerWantsRemoved:(HWRemoveSectionController *)removeSectionController {
+    NSInteger index = [self.adapter sectionForSectionController:removeSectionController];
+    [self.dataList removeObjectAtIndex:index];
+    [self.adapter performUpdatesAnimated:YES completion:NULL];
 }
 
 
