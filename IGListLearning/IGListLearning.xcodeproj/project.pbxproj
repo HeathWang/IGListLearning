@@ -14,7 +14,6 @@
 		7E22D88F209415E200AE38F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E22D88D209415E200AE38F0 /* LaunchScreen.storyboard */; };
 		7E22D892209415E200AE38F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E22D891209415E200AE38F0 /* main.m */; };
 		7E45C79B20984EDB00608398 /* HWSingleListHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E45C79A20984EDB00608398 /* HWSingleListHeaderFooterView.m */; };
-		7E45C79D2098542E00608398 /* Tools in Resources */ = {isa = PBXBuildFile; fileRef = 7E45C79C2098542E00608398 /* Tools */; };
 		7E45C7A02098544A00608398 /* UIButton+HWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E45C79F2098544A00608398 /* UIButton+HWAdd.m */; };
 		7E45C7A3209867A700608398 /* HWSearchSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E45C7A2209867A700608398 /* HWSearchSectionController.m */; };
 		7E45C7A6209867E200608398 /* HWSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E45C7A5209867E200608398 /* HWSearchCell.m */; };
@@ -32,6 +31,9 @@
 		7EE0503A20946CFA000D9127 /* HWListIntoSingleSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0503920946CFA000D9127 /* HWListIntoSingleSectionController.m */; };
 		7EE0503D20946EEC000D9127 /* NSArray+HW_IGListDiffable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0503C20946EEC000D9127 /* NSArray+HW_IGListDiffable.m */; };
 		7EE050402094766D000D9127 /* HWSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0503F2094766D000D9127 /* HWSearchViewController.m */; };
+		7EE050432099621E000D9127 /* HWMixDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050422099621E000D9127 /* HWMixDataType.m */; };
+		7EE0504620996300000D9127 /* HWUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE05045209962FF000D9127 /* HWUserModel.m */; };
+		7EE050492099630D000D9127 /* HWGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050482099630D000D9127 /* HWGridItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +51,6 @@
 		7E22D891209415E200AE38F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E45C79920984EDB00608398 /* HWSingleListHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWSingleListHeaderFooterView.h; sourceTree = "<group>"; };
 		7E45C79A20984EDB00608398 /* HWSingleListHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWSingleListHeaderFooterView.m; sourceTree = "<group>"; };
-		7E45C79C2098542E00608398 /* Tools */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tools; path = IGListLearning/Tools; sourceTree = SOURCE_ROOT; };
 		7E45C79E2098544A00608398 /* UIButton+HWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HWAdd.h"; sourceTree = "<group>"; };
 		7E45C79F2098544A00608398 /* UIButton+HWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HWAdd.m"; sourceTree = "<group>"; };
 		7E45C7A1209867A700608398 /* HWSearchSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWSearchSectionController.h; sourceTree = "<group>"; };
@@ -85,6 +86,12 @@
 		7EE0503C20946EEC000D9127 /* NSArray+HW_IGListDiffable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HW_IGListDiffable.m"; sourceTree = "<group>"; };
 		7EE0503E2094766D000D9127 /* HWSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWSearchViewController.h; sourceTree = "<group>"; };
 		7EE0503F2094766D000D9127 /* HWSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWSearchViewController.m; sourceTree = "<group>"; };
+		7EE050412099621E000D9127 /* HWMixDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWMixDataType.h; sourceTree = "<group>"; };
+		7EE050422099621E000D9127 /* HWMixDataType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWMixDataType.m; sourceTree = "<group>"; };
+		7EE05044209962FF000D9127 /* HWUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWUserModel.h; sourceTree = "<group>"; };
+		7EE05045209962FF000D9127 /* HWUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWUserModel.m; sourceTree = "<group>"; };
+		7EE050472099630D000D9127 /* HWGridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWGridItem.h; sourceTree = "<group>"; };
+		7EE050482099630D000D9127 /* HWGridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWGridItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +146,16 @@
 		7EE0501620941B9E000D9127 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7E45C79C2098542E00608398 /* Tools */,
 				7EE0501F20942053000D9127 /* HWDemoItem.h */,
 				7EE0502020942053000D9127 /* HWDemoItem.m */,
 				7EE0503B20946EEC000D9127 /* NSArray+HW_IGListDiffable.h */,
 				7EE0503C20946EEC000D9127 /* NSArray+HW_IGListDiffable.m */,
+				7EE050412099621E000D9127 /* HWMixDataType.h */,
+				7EE050422099621E000D9127 /* HWMixDataType.m */,
+				7EE05044209962FF000D9127 /* HWUserModel.h */,
+				7EE05045209962FF000D9127 /* HWUserModel.m */,
+				7EE050472099630D000D9127 /* HWGridItem.h */,
+				7EE050482099630D000D9127 /* HWGridItem.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E45C79D2098542E00608398 /* Tools in Resources */,
 				7E22D88F209415E200AE38F0 /* LaunchScreen.storyboard in Resources */,
 				7E22D88C209415E200AE38F0 /* Assets.xcassets in Resources */,
 			);
@@ -363,7 +374,10 @@
 				7E22D892209415E200AE38F0 /* main.m in Sources */,
 				7EE0502D20945350000D9127 /* HWLabelSectionController.m in Sources */,
 				7EE0503A20946CFA000D9127 /* HWListIntoSingleSectionController.m in Sources */,
+				7EE050492099630D000D9127 /* HWGridItem.m in Sources */,
+				7EE050432099621E000D9127 /* HWMixDataType.m in Sources */,
 				7EE0502720944055000D9127 /* HWDemoSectionController.m in Sources */,
+				7EE0504620996300000D9127 /* HWUserModel.m in Sources */,
 				7E45C79B20984EDB00608398 /* HWSingleListHeaderFooterView.m in Sources */,
 				7EE0503720946ADA000D9127 /* HWSingleSectionViewController.m in Sources */,
 				7E45C7A3209867A700608398 /* HWSearchSectionController.m in Sources */,
