@@ -20,6 +20,8 @@
 @property (nonatomic, assign) Class selectedClass;
 @property (nonatomic, strong) NSArray *mixedData;
 
+@property (nonatomic, copy) NSArray *currentData;
+
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
@@ -61,7 +63,8 @@
         return [self filterDataWithType:self.selectedClass];
     }
 
-    return self.mixedData;
+    self.currentData = [self.mixedData copy];
+    return self.currentData;
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
@@ -80,7 +83,7 @@
 #pragma mark - IGListAdapterMoveDelegate
 
 - (void)listAdapter:(IGListAdapter *)listAdapter moveObject:(id)object from:(NSArray *)previousObjects to:(NSArray *)objects {
-    self.mixedData = object;
+    self.currentData = [objects copy];
 }
 
 #pragma mark - segmentControl event
@@ -92,14 +95,29 @@
 }
 
 - (NSArray *)filterDataWithType:(Class)clazz {
-    NSMutableArray *items = [NSMutableArray array];
-    [self.mixedData enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:clazz]) {
-            [items addObject:obj];
-        }
-    }];
 
-    return [items copy];
+    BOOL shouldResearch = NO;
+    for (id data in self.currentData) {
+        if (![data isKindOfClass:clazz]) {
+            shouldResearch = YES;
+        }
+        break;
+    }
+
+    if (shouldResearch) {
+        NSMutableArray *items = [NSMutableArray array];
+        [self.mixedData enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            if ([obj isKindOfClass:clazz]) {
+                [items addObject:obj];
+            }
+        }];
+        self.currentData = [items copy];
+        return self.currentData;
+    } else {
+        return self.currentData;
+    }
+
+
 }
 
 #pragma mark - long press action

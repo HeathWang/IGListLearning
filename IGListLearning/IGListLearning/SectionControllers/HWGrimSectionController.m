@@ -57,6 +57,10 @@
     self.gridItem = object;
 }
 
+- (void)didHighlightItemAtIndex:(NSInteger)index {
+
+}
+
 #pragma mark - handle move action
 
 - (BOOL)canMoveItemAtIndex:(NSInteger)index {

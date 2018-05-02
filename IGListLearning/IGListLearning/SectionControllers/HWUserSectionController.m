@@ -55,4 +55,13 @@
     self.user = object;
 }
 
+- (BOOL)canMoveItemAtIndex:(NSInteger)index {
+    return self.canMove;
+}
+
+// because the section controller ONLY has ONE object, so we do NOT need handle data when move cell.
+//- (void)moveObjectFromIndex:(NSInteger)sourceIndex toIndex:(NSInteger)destinationIndex {
+//
+//}
+
 @end
