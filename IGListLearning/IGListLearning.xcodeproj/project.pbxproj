@@ -22,6 +22,10 @@
 		7E6064E32099EDAC00888CE8 /* HWEmptyDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6064E22099EDAC00888CE8 /* HWEmptyDataViewController.m */; };
 		7E6064E62099F5B900888CE8 /* HWRemoveSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6064E52099F5B900888CE8 /* HWRemoveSectionController.m */; };
 		7E6064E92099F5D400888CE8 /* HWRemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6064E82099F5D400888CE8 /* HWRemoveCell.m */; };
+		7E6064EC209B3C1C00888CE8 /* HWSelfSizingCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6064EB209B3C1C00888CE8 /* HWSelfSizingCellsViewController.m */; };
+		7E6064EF209B428F00888CE8 /* HWSelfSizingSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6064EE209B428F00888CE8 /* HWSelfSizingSectionController.m */; };
+		7E6064F2209B489800888CE8 /* HWFitSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6064F1209B489800888CE8 /* HWFitSizeCell.m */; };
+		7E6064F5209B48A800888CE8 /* HWFullWidthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6064F4209B48A800888CE8 /* HWFullWidthCell.m */; };
 		7EE0501E20941D99000D9127 /* HWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0501D20941D99000D9127 /* HWBaseViewController.m */; };
 		7EE0502120942053000D9127 /* HWDemoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0502020942053000D9127 /* HWDemoItem.m */; };
 		7EE0502420942488000D9127 /* HWPullLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0502320942488000D9127 /* HWPullLoadingViewController.m */; };
@@ -83,6 +87,14 @@
 		7E6064E52099F5B900888CE8 /* HWRemoveSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWRemoveSectionController.m; sourceTree = "<group>"; };
 		7E6064E72099F5D400888CE8 /* HWRemoveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWRemoveCell.h; sourceTree = "<group>"; };
 		7E6064E82099F5D400888CE8 /* HWRemoveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWRemoveCell.m; sourceTree = "<group>"; };
+		7E6064EA209B3C1C00888CE8 /* HWSelfSizingCellsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWSelfSizingCellsViewController.h; sourceTree = "<group>"; };
+		7E6064EB209B3C1C00888CE8 /* HWSelfSizingCellsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWSelfSizingCellsViewController.m; sourceTree = "<group>"; };
+		7E6064ED209B428F00888CE8 /* HWSelfSizingSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWSelfSizingSectionController.h; sourceTree = "<group>"; };
+		7E6064EE209B428F00888CE8 /* HWSelfSizingSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWSelfSizingSectionController.m; sourceTree = "<group>"; };
+		7E6064F0209B489800888CE8 /* HWFitSizeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWFitSizeCell.h; sourceTree = "<group>"; };
+		7E6064F1209B489800888CE8 /* HWFitSizeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWFitSizeCell.m; sourceTree = "<group>"; };
+		7E6064F3209B48A800888CE8 /* HWFullWidthCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWFullWidthCell.h; sourceTree = "<group>"; };
+		7E6064F4209B48A800888CE8 /* HWFullWidthCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWFullWidthCell.m; sourceTree = "<group>"; };
 		7EE0501520941AEA000D9127 /* IGListLearning.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGListLearning.pch; sourceTree = "<group>"; };
 		7EE0501C20941D99000D9127 /* HWBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWBaseViewController.h; sourceTree = "<group>"; };
 		7EE0501D20941D99000D9127 /* HWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWBaseViewController.m; sourceTree = "<group>"; };
@@ -233,6 +245,8 @@
 				7E6064E52099F5B900888CE8 /* HWRemoveSectionController.m */,
 				7EE0506B209AA0D9000D9127 /* HWWorkingRangeSectionController.h */,
 				7EE0506C209AA0D9000D9127 /* HWWorkingRangeSectionController.m */,
+				7E6064ED209B428F00888CE8 /* HWSelfSizingSectionController.h */,
+				7E6064EE209B428F00888CE8 /* HWSelfSizingSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -258,6 +272,8 @@
 				7E6064E22099EDAC00888CE8 /* HWEmptyDataViewController.m */,
 				7EE05068209A9E59000D9127 /* HWWorkingRangeViewController.h */,
 				7EE05069209A9E59000D9127 /* HWWorkingRangeViewController.m */,
+				7E6064EA209B3C1C00888CE8 /* HWSelfSizingCellsViewController.h */,
+				7E6064EB209B3C1C00888CE8 /* HWSelfSizingCellsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -298,6 +314,10 @@
 				7E6064E82099F5D400888CE8 /* HWRemoveCell.m */,
 				7EE0506E209AA105000D9127 /* HWImageViewCell.h */,
 				7EE0506F209AA105000D9127 /* HWImageViewCell.m */,
+				7E6064F0209B489800888CE8 /* HWFitSizeCell.h */,
+				7E6064F1209B489800888CE8 /* HWFitSizeCell.m */,
+				7E6064F3209B48A800888CE8 /* HWFullWidthCell.h */,
+				7E6064F4209B48A800888CE8 /* HWFullWidthCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,6 +465,7 @@
 			files = (
 				7EE0506D209AA0D9000D9127 /* HWWorkingRangeSectionController.m in Sources */,
 				7E6064E62099F5B900888CE8 /* HWRemoveSectionController.m in Sources */,
+				7E6064F5209B48A800888CE8 /* HWFullWidthCell.m in Sources */,
 				7E22D887209415DF00AE38F0 /* ViewController.m in Sources */,
 				7E6064E02098A35400888CE8 /* HWEmptyResultView.m in Sources */,
 				7EE0502420942488000D9127 /* HWPullLoadingViewController.m in Sources */,
@@ -454,6 +475,7 @@
 				7EE0506A209A9E59000D9127 /* HWWorkingRangeViewController.m in Sources */,
 				7EE05070209AA105000D9127 /* HWImageViewCell.m in Sources */,
 				7EE0503D20946EEC000D9127 /* NSArray+HW_IGListDiffable.m in Sources */,
+				7E6064F2209B489800888CE8 /* HWFitSizeCell.m in Sources */,
 				7EE050642099BCFF000D9127 /* HWEmbeddedCell.m in Sources */,
 				7E45C7A02098544A00608398 /* UIButton+HWAdd.m in Sources */,
 				7E22D892209415E200AE38F0 /* main.m in Sources */,
@@ -469,6 +491,7 @@
 				7EE0504620996300000D9127 /* HWUserModel.m in Sources */,
 				7E45C79B20984EDB00608398 /* HWSingleListHeaderFooterView.m in Sources */,
 				7EE0503720946ADA000D9127 /* HWSingleSectionViewController.m in Sources */,
+				7E6064EF209B428F00888CE8 /* HWSelfSizingSectionController.m in Sources */,
 				7E6064E92099F5D400888CE8 /* HWRemoveCell.m in Sources */,
 				7E45C7A3209867A700608398 /* HWSearchSectionController.m in Sources */,
 				7E45C7A920986CA900608398 /* NSString+HWAdd.m in Sources */,
@@ -483,6 +506,7 @@
 				7EE0503320945D40000D9127 /* HWSpinnerCell.m in Sources */,
 				7EE0501E20941D99000D9127 /* HWBaseViewController.m in Sources */,
 				7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */,
+				7E6064EC209B3C1C00888CE8 /* HWSelfSizingCellsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
