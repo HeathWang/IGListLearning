@@ -18,18 +18,18 @@
     return [self isEqual:object];
 }
 
-- (BOOL)isEqual:(id)other {
-    if (other == self)
-        return YES;
-    if (!other || ![[other class] isEqual:[self class]])
-        return NO;
-
-    return YES;
-}
-
-- (NSUInteger)hash {
-    return [super hash];
-}
+//- (BOOL)isEqual:(id)other {
+//    if (other == self)
+//        return YES;
+//    if (!other || ![[other class] isEqual:[self class]])
+//        return NO;
+//
+//    return YES;
+//}
+//
+//- (NSUInteger)hash {
+//    return [super hash];
+//}
 
 
 @end
