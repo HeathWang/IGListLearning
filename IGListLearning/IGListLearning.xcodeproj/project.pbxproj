@@ -47,6 +47,9 @@
 		7EE050612099BBE3000D9127 /* HWHorizontalSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050602099BBE3000D9127 /* HWHorizontalSectionController.m */; };
 		7EE050642099BCFF000D9127 /* HWEmbeddedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050632099BCFF000D9127 /* HWEmbeddedCell.m */; };
 		7EE050672099C003000D9127 /* HWEmbeddedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE050662099C003000D9127 /* HWEmbeddedSectionController.m */; };
+		7EE0506A209A9E59000D9127 /* HWWorkingRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE05069209A9E59000D9127 /* HWWorkingRangeViewController.m */; };
+		7EE0506D209AA0D9000D9127 /* HWWorkingRangeSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0506C209AA0D9000D9127 /* HWWorkingRangeSectionController.m */; };
+		7EE05070209AA105000D9127 /* HWImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE0506F209AA105000D9127 /* HWImageViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +134,12 @@
 		7EE050632099BCFF000D9127 /* HWEmbeddedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWEmbeddedCell.m; sourceTree = "<group>"; };
 		7EE050652099C003000D9127 /* HWEmbeddedSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWEmbeddedSectionController.h; sourceTree = "<group>"; };
 		7EE050662099C003000D9127 /* HWEmbeddedSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWEmbeddedSectionController.m; sourceTree = "<group>"; };
+		7EE05068209A9E59000D9127 /* HWWorkingRangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWWorkingRangeViewController.h; sourceTree = "<group>"; };
+		7EE05069209A9E59000D9127 /* HWWorkingRangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWWorkingRangeViewController.m; sourceTree = "<group>"; };
+		7EE0506B209AA0D9000D9127 /* HWWorkingRangeSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWWorkingRangeSectionController.h; sourceTree = "<group>"; };
+		7EE0506C209AA0D9000D9127 /* HWWorkingRangeSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWWorkingRangeSectionController.m; sourceTree = "<group>"; };
+		7EE0506E209AA105000D9127 /* HWImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWImageViewCell.h; sourceTree = "<group>"; };
+		7EE0506F209AA105000D9127 /* HWImageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWImageViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +231,8 @@
 				7EE050662099C003000D9127 /* HWEmbeddedSectionController.m */,
 				7E6064E42099F5B900888CE8 /* HWRemoveSectionController.h */,
 				7E6064E52099F5B900888CE8 /* HWRemoveSectionController.m */,
+				7EE0506B209AA0D9000D9127 /* HWWorkingRangeSectionController.h */,
+				7EE0506C209AA0D9000D9127 /* HWWorkingRangeSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -245,6 +256,8 @@
 				7EE0505D2099B71E000D9127 /* HWNestedViewController.m */,
 				7E6064E12099EDAC00888CE8 /* HWEmptyDataViewController.h */,
 				7E6064E22099EDAC00888CE8 /* HWEmptyDataViewController.m */,
+				7EE05068209A9E59000D9127 /* HWWorkingRangeViewController.h */,
+				7EE05069209A9E59000D9127 /* HWWorkingRangeViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -283,6 +296,8 @@
 				7EE050632099BCFF000D9127 /* HWEmbeddedCell.m */,
 				7E6064E72099F5D400888CE8 /* HWRemoveCell.h */,
 				7E6064E82099F5D400888CE8 /* HWRemoveCell.m */,
+				7EE0506E209AA105000D9127 /* HWImageViewCell.h */,
+				7EE0506F209AA105000D9127 /* HWImageViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -428,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE0506D209AA0D9000D9127 /* HWWorkingRangeSectionController.m in Sources */,
 				7E6064E62099F5B900888CE8 /* HWRemoveSectionController.m in Sources */,
 				7E22D887209415DF00AE38F0 /* ViewController.m in Sources */,
 				7E6064E02098A35400888CE8 /* HWEmptyResultView.m in Sources */,
@@ -435,6 +451,8 @@
 				7EE0502A20944229000D9127 /* HWDemoViewCell.m in Sources */,
 				7EE0503020945390000D9127 /* HWLabelCell.m in Sources */,
 				7E45C7A6209867E200608398 /* HWSearchCell.m in Sources */,
+				7EE0506A209A9E59000D9127 /* HWWorkingRangeViewController.m in Sources */,
+				7EE05070209AA105000D9127 /* HWImageViewCell.m in Sources */,
 				7EE0503D20946EEC000D9127 /* NSArray+HW_IGListDiffable.m in Sources */,
 				7EE050642099BCFF000D9127 /* HWEmbeddedCell.m in Sources */,
 				7E45C7A02098544A00608398 /* UIButton+HWAdd.m in Sources */,

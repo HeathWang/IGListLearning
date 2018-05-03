@@ -15,6 +15,7 @@
 #import "HWMixDataTypeViewController.h"
 #import "HWNestedViewController.h"
 #import "HWEmptyDataViewController.h"
+#import "HWWorkingRangeViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -78,7 +79,8 @@
                    [[HWDemoItem alloc] initWithDemoName:@"Search Auto Complete" controllerClass:NSStringFromClass(HWSearchViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Mix Data, include multiple data type in list." controllerClass:NSStringFromClass(HWMixDataTypeViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Nested Adapter, a controller cell include another UICollectionView" controllerClass:NSStringFromClass(HWNestedViewController.class)],
-                   [[HWDemoItem alloc] initWithDemoName:@"Empty DataView" controllerClass:NSStringFromClass(HWEmptyDataViewController.class)]];
+                   [[HWDemoItem alloc] initWithDemoName:@"Empty DataView" controllerClass:NSStringFromClass(HWEmptyDataViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Working Range" controllerClass:NSStringFromClass(HWWorkingRangeViewController.class)]];
     }
     return _items;
 }
