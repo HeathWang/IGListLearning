@@ -17,6 +17,7 @@
 #import "HWEmptyDataViewController.h"
 #import "HWWorkingRangeViewController.h"
 #import "HWSelfSizingCellsViewController.h"
+#import "HWDisplayDelegateViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -82,7 +83,8 @@
                    [[HWDemoItem alloc] initWithDemoName:@"Nested Adapter, a controller cell include another UICollectionView" controllerClass:NSStringFromClass(HWNestedViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Empty DataView" controllerClass:NSStringFromClass(HWEmptyDataViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Working Range" controllerClass:NSStringFromClass(HWWorkingRangeViewController.class)],
-                   [[HWDemoItem alloc] initWithDemoName:@"Self Sizeing" controllerClass:NSStringFromClass(HWSelfSizingCellsViewController.class)]];
+                   [[HWDemoItem alloc] initWithDemoName:@"Self Sizeing" controllerClass:NSStringFromClass(HWSelfSizingCellsViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Display Delegate" controllerClass:NSStringFromClass(HWDisplayDelegateViewController.class)]];
     }
     return _items;
 }
