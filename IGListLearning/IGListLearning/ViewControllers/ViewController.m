@@ -21,6 +21,7 @@
 #import "HWSeparatorViewController.h"
 #import "HWStackedViewController.h"
 #import "HWCalendarViewController.h"
+#import "HWAnnouncingDepsViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -90,7 +91,8 @@
                    [[HWDemoItem alloc] initWithDemoName:@"Display Delegate" controllerClass:NSStringFromClass(HWDisplayDelegateViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Test My Custom CollectionViewCell" controllerClass:NSStringFromClass(HWSeparatorViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Stack Section" controllerClass:NSStringFromClass(HWStackedViewController.class)],
-                   [[HWDemoItem alloc] initWithDemoName:@"Calendar, use ListBindingSectionController" controllerClass:NSStringFromClass(HWCalendarViewController.class)]];
+                   [[HWDemoItem alloc] initWithDemoName:@"Calendar, use ListBindingSectionController" controllerClass:NSStringFromClass(HWCalendarViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Dependency Injection" controllerClass:NSStringFromClass(HWAnnouncingDepsViewController.class)]];
     }
     return _items;
 }

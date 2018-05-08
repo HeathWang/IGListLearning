@@ -19,6 +19,9 @@
 		7E20555920A1850D004F4C01 /* HWMonthSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555820A1850D004F4C01 /* HWMonthSectionController.m */; };
 		7E20555C20A1A427004F4C01 /* HWCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555B20A1A427004F4C01 /* HWCalendarDayCell.m */; };
 		7E20555F20A1A46B004F4C01 /* HWMonthTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555E20A1A46B004F4C01 /* HWMonthTitleCell.m */; };
+		7E20556220A1BE37004F4C01 /* HWIncrement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20556120A1BE37004F4C01 /* HWIncrement.m */; };
+		7E20556520A1BFEB004F4C01 /* HWAnnouncingDepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20556420A1BFEB004F4C01 /* HWAnnouncingDepsViewController.m */; };
+		7E20556820A1C13A004F4C01 /* HWInjectionSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20556720A1C13A004F4C01 /* HWInjectionSC.m */; };
 		7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E22D883209415DF00AE38F0 /* AppDelegate.m */; };
 		7E22D887209415DF00AE38F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E22D886209415DF00AE38F0 /* ViewController.m */; };
 		7E22D88C209415E200AE38F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E22D88B209415E200AE38F0 /* Assets.xcassets */; };
@@ -93,6 +96,12 @@
 		7E20555B20A1A427004F4C01 /* HWCalendarDayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWCalendarDayCell.m; sourceTree = "<group>"; };
 		7E20555D20A1A46B004F4C01 /* HWMonthTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWMonthTitleCell.h; sourceTree = "<group>"; };
 		7E20555E20A1A46B004F4C01 /* HWMonthTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWMonthTitleCell.m; sourceTree = "<group>"; };
+		7E20556020A1BE37004F4C01 /* HWIncrement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWIncrement.h; sourceTree = "<group>"; };
+		7E20556120A1BE37004F4C01 /* HWIncrement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWIncrement.m; sourceTree = "<group>"; };
+		7E20556320A1BFEB004F4C01 /* HWAnnouncingDepsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWAnnouncingDepsViewController.h; sourceTree = "<group>"; };
+		7E20556420A1BFEB004F4C01 /* HWAnnouncingDepsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWAnnouncingDepsViewController.m; sourceTree = "<group>"; };
+		7E20556620A1C13A004F4C01 /* HWInjectionSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWInjectionSC.h; sourceTree = "<group>"; };
+		7E20556720A1C13A004F4C01 /* HWInjectionSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWInjectionSC.m; sourceTree = "<group>"; };
 		7E22D87F209415DF00AE38F0 /* IGListLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E22D882209415DF00AE38F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E22D883209415DF00AE38F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -251,6 +260,8 @@
 				7EE050482099630D000D9127 /* HWGridItem.m */,
 				7E20555420A1830E004F4C01 /* HWMonth.h */,
 				7E20555520A1830E004F4C01 /* HWMonth.m */,
+				7E20556020A1BE37004F4C01 /* HWIncrement.h */,
+				7E20556120A1BE37004F4C01 /* HWIncrement.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +299,8 @@
 				7E20554920A13AF3004F4C01 /* HWSeparatorSC.m */,
 				7E20555720A1850D004F4C01 /* HWMonthSectionController.h */,
 				7E20555820A1850D004F4C01 /* HWMonthSectionController.m */,
+				7E20556620A1C13A004F4C01 /* HWInjectionSC.h */,
+				7E20556720A1C13A004F4C01 /* HWInjectionSC.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -323,6 +336,8 @@
 				7E20554F20A1721A004F4C01 /* HWStackedViewController.m */,
 				7E20555120A18279004F4C01 /* HWCalendarViewController.h */,
 				7E20555220A18279004F4C01 /* HWCalendarViewController.m */,
+				7E20556320A1BFEB004F4C01 /* HWAnnouncingDepsViewController.h */,
+				7E20556420A1BFEB004F4C01 /* HWAnnouncingDepsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -525,6 +540,7 @@
 				7E6064E02098A35400888CE8 /* HWEmptyResultView.m in Sources */,
 				7E20555620A1830E004F4C01 /* HWMonth.m in Sources */,
 				7EE0502420942488000D9127 /* HWPullLoadingViewController.m in Sources */,
+				7E20556520A1BFEB004F4C01 /* HWAnnouncingDepsViewController.m in Sources */,
 				7EE0502A20944229000D9127 /* HWDemoViewCell.m in Sources */,
 				7EE0503020945390000D9127 /* HWLabelCell.m in Sources */,
 				7E20552F209D3CBF004F4C01 /* HWDisplayDelegateSectionController.m in Sources */,
@@ -567,9 +583,11 @@
 				7E6064E32099EDAC00888CE8 /* HWEmptyDataViewController.m in Sources */,
 				7EE05058209992C5000D9127 /* HWUserCell.m in Sources */,
 				7EE050612099BBE3000D9127 /* HWHorizontalSectionController.m in Sources */,
+				7E20556820A1C13A004F4C01 /* HWInjectionSC.m in Sources */,
 				7E20555020A1721A004F4C01 /* HWStackedViewController.m in Sources */,
 				7EE0503320945D40000D9127 /* HWSpinnerCell.m in Sources */,
 				7EE0501E20941D99000D9127 /* HWBaseViewController.m in Sources */,
+				7E20556220A1BE37004F4C01 /* HWIncrement.m in Sources */,
 				7E20555F20A1A46B004F4C01 /* HWMonthTitleCell.m in Sources */,
 				7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */,
 				7E6064EC209B3C1C00888CE8 /* HWSelfSizingCellsViewController.m in Sources */,
