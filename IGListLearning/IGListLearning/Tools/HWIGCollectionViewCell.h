@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <IGListKit/IGListBindable.h>
 
 typedef NS_ENUM(NSUInteger, IGCellSeparatorStyle) {
     IGCellSeparatorStyleNone,
@@ -18,7 +19,7 @@ typedef NS_ENUM(NSUInteger, IGCellStyle) {
     IGCellStyleValue1,  // textLabel, Default
 };
 
-@interface HWIGCollectionViewCell : UICollectionViewCell
+@interface HWIGCollectionViewCell : UICollectionViewCell <IGListBindable>
 
 #pragma mark - Separator config
 
@@ -31,4 +32,8 @@ typedef NS_ENUM(NSUInteger, IGCellStyle) {
 @property(nonatomic, readonly, strong) UILabel *textLabel;
 @property (nonatomic, assign) UIEdgeInsets textLabelInset;
 
+/**
+ * subclass can call this method to add, config view, should call super.
+ */
+- (void)setupViews;
 @end

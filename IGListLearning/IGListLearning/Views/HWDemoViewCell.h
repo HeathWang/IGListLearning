@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HWDemoViewCell : UICollectionViewCell
+@interface HWDemoViewCell : UICollectionViewCell <IGListBindable>
 
 @property (nonatomic, copy) NSString *nameText;
 

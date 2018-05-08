@@ -40,14 +40,14 @@
 
 - (void)setupViews {
     // set up default
-    self.cellStyle = IGCellStyleValue1;
-    self.separatorStyle = IGCellSeparatorStyleSingleLine;
+    self.cellStyle = IGCellStyleNone;
+    self.separatorStyle = IGCellSeparatorStyleNone;
     self.separatorColor = [UIColor colorWithRed:200 / 255.0f green:199 / 255.0f blue:204 / 255.0f alpha:1];
     self.separatorInset = UIEdgeInsetsMake(0, 14, 0, 0);
     self.textLabelInset = UIEdgeInsetsMake(4, 14, 4, 14);
 
-    [self.contentView.layer addSublayer:self.separatorLayer];
-    [self.contentView addSubview:self.textLabel];
+//    [self.contentView.layer addSublayer:self.separatorLayer];
+//    [self.contentView addSubview:self.textLabel];
 }
 
 - (void)layoutSubviews {
@@ -68,6 +68,16 @@
     } else {
         self.textLabel.frame = CGRectMake(self.textLabelInset.left, self.textLabelInset.top, CGRectGetWidth(rect) - (self.textLabelInset.left + self.textLabelInset.right), CGRectGetHeight(rect) - (self.textLabelInset.top + self.textLabelInset.bottom));
     }
+}
+
+- (void)setHighlighted:(BOOL)highlighted {
+    self.contentView.backgroundColor = [UIColor colorWithWhite:highlighted ? 0.9f : 1 alpha:1];
+}
+
+#pragma mark - IGListBindable
+
+- (void)bindViewModel:(id)viewModel {
+    // do nothing.
 }
 
 

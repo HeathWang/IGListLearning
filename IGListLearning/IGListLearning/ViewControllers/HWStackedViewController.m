@@ -76,4 +76,5 @@
     }
     return _adapter;
 }
+
 @end

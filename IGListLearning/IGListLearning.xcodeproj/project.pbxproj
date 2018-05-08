@@ -14,6 +14,11 @@
 		7E20554A20A13AF3004F4C01 /* HWSeparatorSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20554920A13AF3004F4C01 /* HWSeparatorSC.m */; };
 		7E20554D20A13C83004F4C01 /* HWIGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20554B20A13C83004F4C01 /* HWIGCollectionViewCell.m */; };
 		7E20555020A1721A004F4C01 /* HWStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20554F20A1721A004F4C01 /* HWStackedViewController.m */; };
+		7E20555320A18279004F4C01 /* HWCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555220A18279004F4C01 /* HWCalendarViewController.m */; };
+		7E20555620A1830E004F4C01 /* HWMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555520A1830E004F4C01 /* HWMonth.m */; };
+		7E20555920A1850D004F4C01 /* HWMonthSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555820A1850D004F4C01 /* HWMonthSectionController.m */; };
+		7E20555C20A1A427004F4C01 /* HWCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555B20A1A427004F4C01 /* HWCalendarDayCell.m */; };
+		7E20555F20A1A46B004F4C01 /* HWMonthTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20555E20A1A46B004F4C01 /* HWMonthTitleCell.m */; };
 		7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E22D883209415DF00AE38F0 /* AppDelegate.m */; };
 		7E22D887209415DF00AE38F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E22D886209415DF00AE38F0 /* ViewController.m */; };
 		7E22D88C209415E200AE38F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E22D88B209415E200AE38F0 /* Assets.xcassets */; };
@@ -78,6 +83,16 @@
 		7E20554C20A13C83004F4C01 /* HWIGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIGCollectionViewCell.h; sourceTree = "<group>"; };
 		7E20554E20A1721A004F4C01 /* HWStackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWStackedViewController.h; sourceTree = "<group>"; };
 		7E20554F20A1721A004F4C01 /* HWStackedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWStackedViewController.m; sourceTree = "<group>"; };
+		7E20555120A18279004F4C01 /* HWCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWCalendarViewController.h; sourceTree = "<group>"; };
+		7E20555220A18279004F4C01 /* HWCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWCalendarViewController.m; sourceTree = "<group>"; };
+		7E20555420A1830E004F4C01 /* HWMonth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWMonth.h; sourceTree = "<group>"; };
+		7E20555520A1830E004F4C01 /* HWMonth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWMonth.m; sourceTree = "<group>"; };
+		7E20555720A1850D004F4C01 /* HWMonthSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWMonthSectionController.h; sourceTree = "<group>"; };
+		7E20555820A1850D004F4C01 /* HWMonthSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWMonthSectionController.m; sourceTree = "<group>"; };
+		7E20555A20A1A427004F4C01 /* HWCalendarDayCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWCalendarDayCell.h; sourceTree = "<group>"; };
+		7E20555B20A1A427004F4C01 /* HWCalendarDayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWCalendarDayCell.m; sourceTree = "<group>"; };
+		7E20555D20A1A46B004F4C01 /* HWMonthTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWMonthTitleCell.h; sourceTree = "<group>"; };
+		7E20555E20A1A46B004F4C01 /* HWMonthTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWMonthTitleCell.m; sourceTree = "<group>"; };
 		7E22D87F209415DF00AE38F0 /* IGListLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E22D882209415DF00AE38F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E22D883209415DF00AE38F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -234,6 +249,8 @@
 				7EE05045209962FF000D9127 /* HWUserModel.m */,
 				7EE050472099630D000D9127 /* HWGridItem.h */,
 				7EE050482099630D000D9127 /* HWGridItem.m */,
+				7E20555420A1830E004F4C01 /* HWMonth.h */,
+				7E20555520A1830E004F4C01 /* HWMonth.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +286,8 @@
 				7E20552E209D3CBF004F4C01 /* HWDisplayDelegateSectionController.m */,
 				7E20554820A13AF3004F4C01 /* HWSeparatorSC.h */,
 				7E20554920A13AF3004F4C01 /* HWSeparatorSC.m */,
+				7E20555720A1850D004F4C01 /* HWMonthSectionController.h */,
+				7E20555820A1850D004F4C01 /* HWMonthSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -302,6 +321,8 @@
 				7E20554620A1399F004F4C01 /* HWSeparatorViewController.m */,
 				7E20554E20A1721A004F4C01 /* HWStackedViewController.h */,
 				7E20554F20A1721A004F4C01 /* HWStackedViewController.m */,
+				7E20555120A18279004F4C01 /* HWCalendarViewController.h */,
+				7E20555220A18279004F4C01 /* HWCalendarViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -348,6 +369,10 @@
 				7E6064F1209B489800888CE8 /* HWFitSizeCell.m */,
 				7E6064F3209B48A800888CE8 /* HWFullWidthCell.h */,
 				7E6064F4209B48A800888CE8 /* HWFullWidthCell.m */,
+				7E20555A20A1A427004F4C01 /* HWCalendarDayCell.h */,
+				7E20555B20A1A427004F4C01 /* HWCalendarDayCell.m */,
+				7E20555D20A1A46B004F4C01 /* HWMonthTitleCell.h */,
+				7E20555E20A1A46B004F4C01 /* HWMonthTitleCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -498,6 +523,7 @@
 				7E6064F5209B48A800888CE8 /* HWFullWidthCell.m in Sources */,
 				7E22D887209415DF00AE38F0 /* ViewController.m in Sources */,
 				7E6064E02098A35400888CE8 /* HWEmptyResultView.m in Sources */,
+				7E20555620A1830E004F4C01 /* HWMonth.m in Sources */,
 				7EE0502420942488000D9127 /* HWPullLoadingViewController.m in Sources */,
 				7EE0502A20944229000D9127 /* HWDemoViewCell.m in Sources */,
 				7EE0503020945390000D9127 /* HWLabelCell.m in Sources */,
@@ -512,6 +538,7 @@
 				7E20554A20A13AF3004F4C01 /* HWSeparatorSC.m in Sources */,
 				7E22D892209415E200AE38F0 /* main.m in Sources */,
 				7EE0502D20945350000D9127 /* HWLabelSectionController.m in Sources */,
+				7E20555320A18279004F4C01 /* HWCalendarViewController.m in Sources */,
 				7EE0503A20946CFA000D9127 /* HWListIntoSingleSectionController.m in Sources */,
 				7EE0504F2099848A000D9127 /* HWUserSectionController.m in Sources */,
 				7EE050492099630D000D9127 /* HWGridItem.m in Sources */,
@@ -528,6 +555,7 @@
 				7E45C7A3209867A700608398 /* HWSearchSectionController.m in Sources */,
 				7E45C7A920986CA900608398 /* NSString+HWAdd.m in Sources */,
 				7EE050522099849F000D9127 /* HWGrimSectionController.m in Sources */,
+				7E20555C20A1A427004F4C01 /* HWCalendarDayCell.m in Sources */,
 				7E20554D20A13C83004F4C01 /* HWIGCollectionViewCell.m in Sources */,
 				7EE05055209984CD000D9127 /* HWExpandableSectionController.m in Sources */,
 				7E20552C209D3C6B004F4C01 /* HWDisplayDelegateViewController.m in Sources */,
@@ -535,12 +563,14 @@
 				7EE050402094766D000D9127 /* HWSearchViewController.m in Sources */,
 				7E20554720A1399F004F4C01 /* HWSeparatorViewController.m in Sources */,
 				7EE0502120942053000D9127 /* HWDemoItem.m in Sources */,
+				7E20555920A1850D004F4C01 /* HWMonthSectionController.m in Sources */,
 				7E6064E32099EDAC00888CE8 /* HWEmptyDataViewController.m in Sources */,
 				7EE05058209992C5000D9127 /* HWUserCell.m in Sources */,
 				7EE050612099BBE3000D9127 /* HWHorizontalSectionController.m in Sources */,
 				7E20555020A1721A004F4C01 /* HWStackedViewController.m in Sources */,
 				7EE0503320945D40000D9127 /* HWSpinnerCell.m in Sources */,
 				7EE0501E20941D99000D9127 /* HWBaseViewController.m in Sources */,
+				7E20555F20A1A46B004F4C01 /* HWMonthTitleCell.m in Sources */,
 				7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */,
 				7E6064EC209B3C1C00888CE8 /* HWSelfSizingCellsViewController.m in Sources */,
 			);

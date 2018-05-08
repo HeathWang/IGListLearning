@@ -34,6 +34,7 @@
 - (__kindof UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
     HWIGCollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:HWIGCollectionViewCell.class forSectionController:self atIndex:index];
     cell.textLabel.text = [NSString stringWithFormat:@"Section %ld index %ld", (long) self.section, (long) index];
+    cell.cellStyle = IGCellStyleValue1;
     if (index % 2 == 0) {
         cell.separatorStyle = IGCellSeparatorStyleNone;
         cell.textLabelInset = UIEdgeInsetsMake(4, 14, 4, 14);
