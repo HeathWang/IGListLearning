@@ -19,6 +19,7 @@
 #import "HWSelfSizingCellsViewController.h"
 #import "HWDisplayDelegateViewController.h"
 #import "HWSeparatorViewController.h"
+#import "HWStackedViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -86,7 +87,8 @@
                    [[HWDemoItem alloc] initWithDemoName:@"Working Range" controllerClass:NSStringFromClass(HWWorkingRangeViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Self Sizeing" controllerClass:NSStringFromClass(HWSelfSizingCellsViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Display Delegate" controllerClass:NSStringFromClass(HWDisplayDelegateViewController.class)],
-                   [[HWDemoItem alloc] initWithDemoName:@"Test My Custom CollectionViewCell" controllerClass:NSStringFromClass(HWSeparatorViewController.class)]];
+                   [[HWDemoItem alloc] initWithDemoName:@"Test My Custom CollectionViewCell" controllerClass:NSStringFromClass(HWSeparatorViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Stack Section" controllerClass:NSStringFromClass(HWStackedViewController.class)]];
     }
     return _items;
 }

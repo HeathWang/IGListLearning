@@ -13,6 +13,7 @@
 		7E20554720A1399F004F4C01 /* HWSeparatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20554620A1399F004F4C01 /* HWSeparatorViewController.m */; };
 		7E20554A20A13AF3004F4C01 /* HWSeparatorSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20554920A13AF3004F4C01 /* HWSeparatorSC.m */; };
 		7E20554D20A13C83004F4C01 /* HWIGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20554B20A13C83004F4C01 /* HWIGCollectionViewCell.m */; };
+		7E20555020A1721A004F4C01 /* HWStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20554F20A1721A004F4C01 /* HWStackedViewController.m */; };
 		7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E22D883209415DF00AE38F0 /* AppDelegate.m */; };
 		7E22D887209415DF00AE38F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E22D886209415DF00AE38F0 /* ViewController.m */; };
 		7E22D88C209415E200AE38F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E22D88B209415E200AE38F0 /* Assets.xcassets */; };
@@ -75,6 +76,8 @@
 		7E20554920A13AF3004F4C01 /* HWSeparatorSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWSeparatorSC.m; sourceTree = "<group>"; };
 		7E20554B20A13C83004F4C01 /* HWIGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWIGCollectionViewCell.m; sourceTree = "<group>"; };
 		7E20554C20A13C83004F4C01 /* HWIGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIGCollectionViewCell.h; sourceTree = "<group>"; };
+		7E20554E20A1721A004F4C01 /* HWStackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWStackedViewController.h; sourceTree = "<group>"; };
+		7E20554F20A1721A004F4C01 /* HWStackedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWStackedViewController.m; sourceTree = "<group>"; };
 		7E22D87F209415DF00AE38F0 /* IGListLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E22D882209415DF00AE38F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E22D883209415DF00AE38F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -297,6 +300,8 @@
 				7E20552B209D3C6B004F4C01 /* HWDisplayDelegateViewController.m */,
 				7E20554520A1399F004F4C01 /* HWSeparatorViewController.h */,
 				7E20554620A1399F004F4C01 /* HWSeparatorViewController.m */,
+				7E20554E20A1721A004F4C01 /* HWStackedViewController.h */,
+				7E20554F20A1721A004F4C01 /* HWStackedViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -533,6 +538,7 @@
 				7E6064E32099EDAC00888CE8 /* HWEmptyDataViewController.m in Sources */,
 				7EE05058209992C5000D9127 /* HWUserCell.m in Sources */,
 				7EE050612099BBE3000D9127 /* HWHorizontalSectionController.m in Sources */,
+				7E20555020A1721A004F4C01 /* HWStackedViewController.m in Sources */,
 				7EE0503320945D40000D9127 /* HWSpinnerCell.m in Sources */,
 				7EE0501E20941D99000D9127 /* HWBaseViewController.m in Sources */,
 				7E22D884209415DF00AE38F0 /* AppDelegate.m in Sources */,
