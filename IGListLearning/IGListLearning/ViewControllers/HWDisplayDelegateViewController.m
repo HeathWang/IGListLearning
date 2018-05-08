@@ -25,6 +25,7 @@
     [self.view addSubview:self.collectionView];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
+
 }
 
 - (void)didReceiveMemoryWarning {

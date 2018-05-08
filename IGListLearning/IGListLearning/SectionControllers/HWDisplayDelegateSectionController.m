@@ -9,7 +9,7 @@
 #import "HWDisplayDelegateSectionController.h"
 #import "HWDemoViewCell.h"
 
-@interface HWDisplayDelegateSectionController ()
+@interface HWDisplayDelegateSectionController () <IGListDisplayDelegate>
 
 @property (nonatomic, strong) NSNumber *itemCount;
 
@@ -21,6 +21,7 @@
     self = [super init];
     if (self) {
         self.inset = UIEdgeInsetsMake(0, 0, 44, 0);
+        self.displayDelegate = self;
     }
 
     return self;
@@ -43,6 +44,24 @@
 
 - (void)didUpdateToObject:(id)object {
     self.itemCount = object;
+}
+
+#pragma mark - IGListDisplayDelegate
+
+- (void)listAdapter:(IGListAdapter *)listAdapter willDisplaySectionController:(IGListSectionController *)sectionController {
+    NSLog(@"%s section index: %ld", __PRETTY_FUNCTION__, (long) sectionController.section);
+}
+
+- (void)listAdapter:(IGListAdapter *)listAdapter didEndDisplayingSectionController:(IGListSectionController *)sectionController {
+    NSLog(@"%s section index: %ld", __PRETTY_FUNCTION__, (long) sectionController.section);
+}
+
+- (void)listAdapter:(IGListAdapter *)listAdapter willDisplaySectionController:(IGListSectionController *)sectionController cell:(UICollectionViewCell *)cell atIndex:(NSInteger)index {
+    NSLog(@"%s section index: %ld cell index:%ld", __PRETTY_FUNCTION__, (long) sectionController.section, (long) index);
+}
+
+- (void)listAdapter:(IGListAdapter *)listAdapter didEndDisplayingSectionController:(IGListSectionController *)sectionController cell:(UICollectionViewCell *)cell atIndex:(NSInteger)index {
+    NSLog(@"%s section index: %ld cell index:%ld", __PRETTY_FUNCTION__, (long) sectionController.section, (long) index);
 }
 
 
