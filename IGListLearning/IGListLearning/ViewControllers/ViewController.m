@@ -18,6 +18,7 @@
 #import "HWWorkingRangeViewController.h"
 #import "HWSelfSizingCellsViewController.h"
 #import "HWDisplayDelegateViewController.h"
+#import "HWSeparatorViewController.h"
 
 @interface ViewController () <IGListAdapterDataSource>
 
@@ -84,7 +85,8 @@
                    [[HWDemoItem alloc] initWithDemoName:@"Empty DataView" controllerClass:NSStringFromClass(HWEmptyDataViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Working Range" controllerClass:NSStringFromClass(HWWorkingRangeViewController.class)],
                    [[HWDemoItem alloc] initWithDemoName:@"Self Sizeing" controllerClass:NSStringFromClass(HWSelfSizingCellsViewController.class)],
-                   [[HWDemoItem alloc] initWithDemoName:@"Display Delegate" controllerClass:NSStringFromClass(HWDisplayDelegateViewController.class)]];
+                   [[HWDemoItem alloc] initWithDemoName:@"Display Delegate" controllerClass:NSStringFromClass(HWDisplayDelegateViewController.class)],
+                   [[HWDemoItem alloc] initWithDemoName:@"Test My Custom CollectionViewCell" controllerClass:NSStringFromClass(HWSeparatorViewController.class)]];
     }
     return _items;
 }

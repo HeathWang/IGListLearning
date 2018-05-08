@@ -1,5 +1,5 @@
 //
-//  IGCollectionViewCell.h
+//  HWIGCollectionViewCell.h
 //  XiBeiYouMianCunIOS
 //
 //  Created by Heath on 2018/5/7.
@@ -10,15 +10,25 @@
 
 typedef NS_ENUM(NSUInteger, IGCellSeparatorStyle) {
     IGCellSeparatorStyleNone,
-    IGCellSeparatorStyleSingleLine
+    IGCellSeparatorStyleSingleLine, // this is default
 };
 
-@interface IGCollectionViewCell : UICollectionViewCell
+typedef NS_ENUM(NSUInteger, IGCellStyle) {
+    IGCellStyleNone, // No textLabel
+    IGCellStyleValue1,  // textLabel, Default
+};
+
+@interface HWIGCollectionViewCell : UICollectionViewCell
 
 #pragma mark - Separator config
+
+@property (nonatomic, assign) IGCellStyle cellStyle;
 
 @property (nonatomic, assign) IGCellSeparatorStyle separatorStyle;
 @property (nonatomic, assign) UIEdgeInsets separatorInset;
 @property (nonatomic, copy) UIColor *separatorColor;
+
+@property(nonatomic, readonly, strong) UILabel *textLabel;
+@property (nonatomic, assign) UIEdgeInsets textLabelInset;
 
 @end
